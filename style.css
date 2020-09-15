@@ -67,6 +67,7 @@ font-family: 'Pacifico', cursive;
   background: lightgrey;
   border: 2px solid black;
   border-radius: 0.5rem;
+  position: relative;
 }
 
 
