@@ -1,75 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Pacifico&display=swap'); /* импорт шрифтов */
 /*
 font-family: 'Open Sans', sans-serif;
 font-family: 'Pacifico', cursive;
 */
 
-.coffee-list {
-  background-image: url("img/background.jpg");
-  background-size: cover;
+.coffee-list { /* селектор по классу */
+  background-image: url("img/background.jpg"); /* фоновое изображение для элемента */
+  background-size: cover; /* масштабирует фоновое изображение согласно заданным размерам */
 }
 
-.coffee-item {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.7);
-  margin: 15px 0;
-  border-radius: calc(100px / 2);
+.coffee-item { /* селектор по классу */
+  color: white; /* цвет текста элемента */
+  background-color: rgba(0, 0, 0, 0.7); /* цвет фона элемента */
+  margin: 15px 0; /* величину отступа от каждого края элемента */
+  border-radius: calc(100px / 2); /* радиус скругления уголков рамки */
   transition: background-color 300ms, transform 300ms;
-  cursor: pointer;
+  cursor: pointer; /* форма курсора в пределах элемента */
 }
 
-.coffee-item img {
-  height: 100px;
-  background-color: white;
-  border-radius: 50%;
+.coffee-item img { /* селектор по классу */
+  height: 100px; /* высота элемента */
+  background-color: white; /* цвет фона элемента */
+  border-radius: 50%; /* радиус скругления уголков рамки */
 }
 
-.coffee-item span {
-  font-family: 'Pacifico', cursive;
-  margin-left: 40px;
-  font-size: 35px;
+.coffee-item span { /* селектор по классу */
+  font-family: 'Pacifico', cursive; /* устанавливает семейство шрифта */
+  margin-left: 40px; /* величина отступа от левого края элемента */
+  font-size: 35px; /* размер шрифта элемента */
 }
 
-.coffee-item:hover {
-  background-color: rgba(50, 50, 50, 0.7);
-  transform: scale(1.04);
+.coffee-item:hover { /* селектор по классу, hover - псевдоэлемент эффекта перехода между двумя состояниями элемента */
+  background-color: rgba(50, 50, 50, 0.7); /* цвет фона элемента */
+  transform: scale(1.04); /* трансформирует элемент, масштаб элемента по горизонтали и вертикали */
 }
 
-.coffee-oper {
-  background-color: rgb(230, 230, 230);
-  padding: 1rem;
+.coffee-oper { /* селектор по классу */
+  background-color: rgb(230, 230, 230); /* цвет фона элемента */
+  padding: 1rem; /* значение полей вокруг содержимого элемента */
 }
 
-.display {
-  background-color: lightgreen;
-  border: 2px solid darkgreen;
-  box-sizing: border-box;
-  padding: 0.5rem;
-  font-family: 'Pacifico', cursive;
+.display { /* селектор по классу */
+  background-color: lightgreen; /* цвет фона элемента */
+  border: 2px solid darkgreen; /* позволяет одновременно установить толщину, стиль и цвет границы вокруг элемента */
+  box-sizing: border-box; /* изменения алгоритма расчета ширины и высоты элемента */
+  padding: 0.5rem; /* значение полей вокруг содержимого элемента */
+  font-family: 'Pacifico', cursive; /* устанавливает семейство шрифта */
 }
 
-.cup-container {
-  margin-top: 2rem;
+.cup-container { /* селектор по классу */
+  margin-top: 2rem; /* величина отступа от верхнего края элемента */
 }
 
-.cup {
-  width: 100%;
-  display: none;
-  opacity: 0;
+.cup { /* селектор по классу */
+  width: 100%; /* ширина блочных или заменяемых элементов */
+  display: none; /* определяет, как элемент должен быть показан в документе */
+  opacity: 0; /* уровень прозрачности элемента веб-страницы */
 }
 
-.atm {
-  width: 100%;
+.atm { /* селектор по классу */
+  width: 100%; /* ширина блочных или заменяемых элементов */
 }
 
-.change-container {
-  min-height: 10rem;
-  background: lightgrey;
-  border: 2px solid black;
-  border-radius: 0.5rem;
-  position: relative;
+.change-container { /* селектор по классу */
+  min-height: 10rem; /* минимальная высота элемента */
+  background: lightgrey; /* цвет фона элемента */
+  border: 2px solid black; /* позволяет одновременно установить толщину, стиль и цвет границы вокруг элемента */
+  border-radius: 0.5rem; /* радиус скругления уголков рамки */
+  position: relative; /* способ позиционирования элемента относительно окна браузера или других объектов на веб-странице */
 }
-
-
-
-

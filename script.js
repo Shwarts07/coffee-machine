@@ -1,4 +1,4 @@
-"use strict"
+"use strict" //строгий режим
 
 let progressBar = document.querySelector(".progress-bar");
 let bigCup = document.querySelector(".cup");
@@ -28,8 +28,10 @@ function makeCoffee(name, price, element) {
     let cookingInterval = setInterval(function() {
       readyPercent++;
       //console.log(readyPercent);
-      bigCup.style.opacity = readyPercent + "%";
-      progressBar.style.width = readyPercent + "%";
+      requestAnimationFrame(function() {
+        bigCup.style.opacity = readyPercent + "%";
+        progressBar.style.width = readyPercent + "%";
+      })
       changeDisplayText(`Ваш ${name} готовится. ${readyPercent}%`);
       if(readyPercent >= 100) {
         clearInterval(cookingInterval);
@@ -65,7 +67,7 @@ function changeDisplayText(message) {
   displayText.innerHTML = message;
 }
 
-//--------------Drag'n'Drop--------------
+//--------------Drag'n'Drop--------------учим принимать купюры
 
 let money = document.querySelectorAll(".money img");
 // for (let i=0; i < money.length; i++) {
@@ -140,7 +142,7 @@ function inAtm(bill) {
     
 }
 
-//---------------------------------
+//---------------------------------учим выдавать сдачу
 let changeButton = document.querySelector(".change-button");
 changeButton.onclick = function() {
   takeChange();
